@@ -9,6 +9,7 @@ import CategoryList from '../../components/CategoryList/CategoryList';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
 import UserLogOut from '../../components/UserLogOut/UserLogOut';
 
+
 export default function NewOrderPage({ user, setUser }) {
   // If your state will ultimately be an array, ALWAYS
   // initialize to an empty array

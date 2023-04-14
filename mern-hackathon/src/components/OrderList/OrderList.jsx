@@ -1,14 +1,12 @@
 import "./OrderList.css"
 import OrderListItem from '../OrderListItem/OrderListItem';
 
-export default function OrderList({ orders  }) {
+export default function OrderList({ orders, showOrderDetail, handleClick   }) {
   return (
-    <main>
-      {/* {items} */}
+    <main className="OrderList">
       {orders.map((order) => (
-        <OrderListItem key={order.id} order={order} />
+        <OrderListItem key={order.id} order={order} handleClick={handleClick} showOrderDetail={showOrderDetail} />
       ))}
-      <h1>ORDERS HERE</h1>
     </main>
   );
 }
